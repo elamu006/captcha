@@ -11,10 +11,11 @@ body{
     justify-content:center;
     align-items:center;
     background:rgb(182, 228, 255);
+    padding:20px;
 }
 
 .container{
-    width:90%;
+    width:100%;
     max-width:500px;
     background:whitesmoke;
     padding:30px;
@@ -32,6 +33,7 @@ h1{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    gap:10px;
     border:2px solid #555;
     border-radius:15px;
     padding:10px;
@@ -42,11 +44,14 @@ h1{
 #captcha{
     font-size:32px;
     letter-spacing:8px;
+    font-weight:bold;
+    word-break:break-all;
 }
 
 #refreshBtn{
     width:60px;
     height:60px;
+    min-width:60px;
     border:none;
     border-radius:12px;
     background:rgb(182,228,255);
@@ -56,7 +61,7 @@ h1{
 
 input{
     width:100%;
-    padding:22px;
+    padding:18px;
     font-size:20px;
     border:2px solid #555;
     border-radius:15px;
@@ -69,7 +74,7 @@ input{
     padding:18px;
     border:none;
     border-radius:15px;
-    background:rgba(182,228,255);
+    background:rgb(182,228,255);
     color:black;
     font-size:24px;
     font-weight:bold;
@@ -80,4 +85,115 @@ input{
     margin-top:15px;
     font-size:18px;
     font-weight:bold;
+}
+
+/* ========================= */
+/* Mobile Small */
+/* ========================= */
+@media (max-width:480px){
+
+    .container{
+        padding:20px 15px;
+    }
+
+    h1{
+        font-size:28px;
+        margin-bottom:20px;
+    }
+
+    .captcha-box{
+        padding:8px;
+        gap:8px;
+    }
+
+    #captcha{
+        font-size:20px;
+        letter-spacing:3px;
+    }
+
+    #refreshBtn{
+        width:45px;
+        height:45px;
+        min-width:45px;
+        font-size:20px;
+    }
+
+    input{
+        padding:14px;
+        font-size:16px;
+    }
+
+    #submitBtn{
+        padding:14px;
+        font-size:18px;
+    }
+
+    #message{
+        font-size:15px;
+    }
+}
+
+/* ========================= */
+/* Mobile Medium */
+/* ========================= */
+@media (min-width:481px) and (max-width:767px){
+
+    h1{
+        font-size:34px;
+    }
+
+    #captcha{
+        font-size:26px;
+        letter-spacing:5px;
+    }
+
+    #refreshBtn{
+        width:50px;
+        height:50px;
+        font-size:24px;
+    }
+
+    input{
+        font-size:18px;
+    }
+
+    #submitBtn{
+        font-size:20px;
+    }
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+@media (min-width:768px) and (max-width:1023px){
+
+    .container{
+        max-width:600px;
+    }
+
+    h1{
+        font-size:38px;
+    }
+
+    #captcha{
+        font-size:30px;
+    }
+}
+
+/* ========================= */
+/* Laptop & Desktop */
+/* ========================= */
+@media (min-width:1024px){
+
+    .container{
+        max-width:500px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    #captcha{
+        font-size:32px;
+    }
 }
