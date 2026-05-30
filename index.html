@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Captcha Generator</h1>
+
+        <div class="captcha-box">
+            <span id="captcha"></span>
+
+            <button id="refreshBtn">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+
+        <input
+            type="text"
+            id="captchaInput"
+            placeholder="Enter Captcha"
+        >
+
+        <button id="submitBtn">Submit</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
